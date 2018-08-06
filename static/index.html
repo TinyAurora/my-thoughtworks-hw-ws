@@ -1,1 +1,76 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ThoughtWorks作业</title>
+    </head>
+    
+    <p>点击各个选项切换作业题目:</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Javascript简单编程题-1</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Javascript简单编程题-2</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Javascript中级编程题-1</button>
+        <button class="tablinks" onclick="openCity(event, 'dong')">Javascript中级编程题-2</button>
+        <button class="tablinks" onclick="openCity(event, 'guang')">第二组逻辑题</button>
+    </div>
+   
+    <div id="London" class="tabcontent">
+        <p>输入第一个数: <input type="text" id="num1"></p>
+        <p>输入第二个数: <input type="text" id="num2"></p>
+        <button onclick="get_remainder()">求余</button>
+        <p id="result"></p>
+        <script type="text/javascript" src="./js/get_remainder_function.js"></script>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <p>输入一组数据，比如，6,9,15,-2,92,11(','为英文输入法模式下)</p>
+        <p><input type="text" id="inputStr"></p>
+        <button onclick="get_result()">输出结果</button>
+        <p id="min"></p>
+        <p id="max"></p>
+        <p id="nums"></p>
+        <p id="average"></p>
+        <script type="text/javascript" src="./js/get_calculate_result_function.js"></script>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <p>输入一串数字，比如，123</p>
+        <p><input type="text" id="inputNumStr"></p>
+        <button onclick="get_sum_of_str()">求和</button>
+        <p id="sum"></p>
+        <script type="text/javascript" src="./js/get_sum_of_str_function.js"></script>
+    </div>
+
+    <div id="dong" class="tabcontent">
+        <p>输入数字，比如，910</p>
+        <p><input type="text" id="inputNum"></p>
+        <button onclick="get_lcd_of_num()">转化</button>
+        <div class="line_height_adjust">
+            <p id="line_1"></p>
+            <p id="line_2"></p>
+            <p id="line_3"></p>
+        </div>
+        <script type="text/javascript" src="./js/get_lcd_of_num_function.js"></script>
+    </div>
+
+    <div id="guang" class="tabcontent">
+        <p>请将题目信息输入到下面输入框中，输入格式，eg: '编号-数字-YES-NO-指令'</p>
+        <p>1. <input type="text" id="instruction_1" size="75"></p>
+        <p>2. <input type="text" id="instruction_2" size="75"></p>
+        <p>3. <input type="text" id="instruction_3" size="75"></p>
+        <p>4. <input type="text" id="instruction_4" size="75"></p>
+        <p>5. <input type="text" id="instruction_5" size="75"></p>
+        <p>6. <input type="text" id="instruction_6" size="75"></p>
+        <p>7. <input type="text" id="instruction_7" size="75"></p>
+        <p>8. <input type="text" id="instruction_8" size="75"></p>
+        <p>9. <input type="text" id="instruction_9" size="75"></p>
+        <p>经过以上操作之后，现在<input type="text" id="question_num" size="1" maxlength="1">号盒子中的数字是多少?</p>
+        <button onclick="get_answer()">答案</button>
+        <p id="answer"></p>
+        <script type="text/javascript" src="./js/get_logic_answer_function.js"></script>
+    </div>
+    
+    <script type="text/javascript" src="./js/index_js.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index_css.css">
+</html>
