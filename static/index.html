@@ -5,14 +5,15 @@
         <title>ThoughtWorks作业</title>
     </head>
     
-    <p>点击各个选项切换作业题目:</p>
+    <p>ThoughtWorks训练营作业实现:</p>
 
     <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Javascript简单编程题-1</button>
         <button class="tablinks" onclick="openCity(event, 'Paris')">Javascript简单编程题-2</button>
         <button class="tablinks" onclick="openCity(event, 'Tokyo')">Javascript中级编程题-1</button>
         <button class="tablinks" onclick="openCity(event, 'dong')">Javascript中级编程题-2</button>
-        <button class="tablinks" onclick="openCity(event, 'guang')">第二组逻辑题</button>
+        <button class="tablinks" onclick="openCity(event, 'guang')">逻辑题程序</button>
+        <button class="tablinks" onclick="openCity(event, 'ren')">视频演示</button>
     </div>
    
     <div id="London" class="tabcontent">
@@ -69,6 +70,10 @@
         <button onclick="get_answer()">答案</button>
         <p id="answer"></p>
         <script type="text/javascript" src="./js/get_logic_answer_function.js"></script>
+    </div>
+
+    <div id="ren" class="tabcontent">
+        <a href="./video/movie.mp4">播放视频文件</a> 
     </div>
     
     <script type="text/javascript" src="./js/index_js.js"></script>
