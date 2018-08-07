@@ -40,7 +40,7 @@ div.tab button.active {
     float: left;
     padding: 0px 12px;
     border: 1px solid #ccc;
-    width: 70%;
+    width: 80%;
     border-left: none;
     height: 500px;
 }
@@ -48,4 +48,14 @@ div.tab button.active {
 /* Style the line_height_adjust */
 div.line_height_adjust {
     line-height:1px
+}
+
+div.leftandright {
+    height: 500px;
+    width: 600px;
+    float: left;
+}
+
+div.padding_left_px {
+    padding-left: 15px;
 }

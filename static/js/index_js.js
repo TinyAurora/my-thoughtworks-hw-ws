@@ -1,4 +1,4 @@
-function openCity(evt, cityName) {
+function select_hw(evt, hw_num) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -8,9 +8,9 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(hw_num).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
-// 触发 id="defaultOpen" click 事件
-document.getElementById("defaultOpen").click();
+// 触发 id="defaultselected" click 事件
+document.getElementById("defaultselected").click();
