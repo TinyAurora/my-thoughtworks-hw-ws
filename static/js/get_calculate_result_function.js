@@ -8,7 +8,7 @@ function check_input_2(inputStr) {
         return ISSPACE;
     } else {
         for (var i = 0; i < inputArray.length; i++) {
-            if (isNaN(inputArray[i])) {
+            if (isNaN(inputArray[i]) || isNaN(inputArray[i][inputArray[i].length - 1])) {
                 return ISNAN;                     // 输入含有非法字符
             }
             if (Number(inputArray[i][0]) === 0) {       // 输入为非法数字

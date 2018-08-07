@@ -22,7 +22,7 @@ function get_remainder() {
 function check_input_1(num1, num2) {
     if (num1 === '' || num2 === '') {    // 输入为空
         return ISNULL;
-    } else if (isNaN(num1) || isNaN(num2)) {    // 输入不是数字
+    } else if (isNaN(num1) || isNaN(num2) || isNaN(num1[num1.length - 1]) || isNaN(num2[num2.length - 1])) {    // 输入含有非法字符
         return ISNAN;
     } else if (!(/^[0-9]+.?[0-9]*/).test(num1) || !(/^[0-9]+.?[0-9]*/).test(num2)) {    // 输入含有空格
         return ISSPACE;

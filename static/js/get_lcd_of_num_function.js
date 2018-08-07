@@ -1,10 +1,30 @@
+// 输入检查
 function check_input_4(inputStr) {
-    return true;
+    if (inputStr === "") {                                // 输入为空
+        return ISNULL;
+    } else if (isNaN(inputStr) || isNaN(inputStr[inputStr.length - 1])) {   // 输入含有非法字符
+        return ISNAN;
+    } else if (Number(inputStr.indexOf(" ")) !== -1) {    // 输入含有空格
+        return ISSPACE;
+    } else {                                                 // 输入合法
+        return ISOK;
+    }
 }
 
+
+// 得到结果
 function get_lcd_of_num() {
     var inputStr = document.getElementById("inputNum").value;
+    switch (check_input_4(inputStr)) {
+        case ISNAN: alert("错误：输入含有非法字符！"); break;
+        case ISNULL: alert("错误：输入不能为空！"); break;
+        case ISSPACE: alert("错误：输入不能含有空格符！"); break;
+        case ISOK: output_lcd(inputStr); break;
+    }
+}
 
+// 输出
+function output_lcd(inputStr) {
     // 数字符号映射表
     var numSign = {
         '0' : ['._.', '|. |', '|_|'],
