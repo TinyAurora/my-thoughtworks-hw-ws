@@ -7,7 +7,7 @@ div.tab {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     width: 20%;
-    height: 500px;
+    height: 550px;
 }
 
 /* Style the buttons inside the tab */
@@ -42,7 +42,7 @@ div.tab button.active {
     border: 1px solid #ccc;
     width: 80%;
     border-left: none;
-    height: 500px;
+    height: 550px;
 }
 
 /* Style the line_height_adjust */
@@ -56,6 +56,16 @@ div.leftandright {
     float: left;
 }
 
+div.leftandright_1 {
+    height: 500px;
+    width: 580px;
+    float: left;
+}
+
 div.padding_left_px {
     padding-left: 15px;
+}
+
+div.input_example_color {
+    background-color: dimgrey;
 }

@@ -124,21 +124,39 @@
     </div>
 
     <div id="hw_5" class="tabcontent">
-        <p>请将题目信息输入到下面输入框中，输入格式，eg: '编号-数字-YES-NO-指令'</p>
-        <p>'编号-数字-YES-NO-指令'中的指令请严格复制题目里的指令，如格式错误，会出现浏览器崩溃情况！</p>
-        <p>1. <input type="text" id="instruction_1" size="75"></p>
-        <p>2. <input type="text" id="instruction_2" size="75"></p>
-        <p>3. <input type="text" id="instruction_3" size="75"></p>
-        <p>4. <input type="text" id="instruction_4" size="75"></p>
-        <p>5. <input type="text" id="instruction_5" size="75"></p>
-        <p>6. <input type="text" id="instruction_6" size="75"></p>
-        <p>7. <input type="text" id="instruction_7" size="75"></p>
-        <p>8. <input type="text" id="instruction_8" size="75"></p>
-        <p>9. <input type="text" id="instruction_9" size="75"></p>
-        <p>经过以上操作之后，现在<input type="text" id="question_num" size="1" maxlength="1">号盒子中的数字是多少?</p>
-        <button onclick="get_answer()">答案</button>
-        <p id="answer"></p>
-        <script type="text/javascript" src="./js/get_logic_answer_function.js"></script>
+        <div class="leftandright_1">
+            <h2>实现结果</h2>
+            <p>请将题目信息输入到下面输入框中，输入格式，eg: '编号-数字-YES-NO-指令'</p>
+            <p>1. <input type="text" id="instruction_1" size="75"></p>
+            <p>2. <input type="text" id="instruction_2" size="75"></p>
+            <p>3. <input type="text" id="instruction_3" size="75"></p>
+            <p>4. <input type="text" id="instruction_4" size="75"></p>
+            <p>5. <input type="text" id="instruction_5" size="75"></p>
+            <p>6. <input type="text" id="instruction_6" size="75"></p>
+            <p>7. <input type="text" id="instruction_7" size="75"></p>
+            <p>8. <input type="text" id="instruction_8" size="75"></p>
+            <p>9. <input type="text" id="instruction_9" size="75"></p>
+            <p>经过以上操作之后，现在<input type="text" id="question_num" size="1" maxlength="1">号盒子中的数字是多少?</p>
+            <button onclick="get_answer()">答案</button>
+            <p id="answer"></p>
+            <script type="text/javascript" src="./js/get_logic_answer_function.js"></script>
+        </div>
+        <div class="leftandright_1">
+            <h2>输入示例</h2>
+            <p>请严格按照示例格式输入，否则，浏览器将会出现崩溃情况！</p>
+            <div class="input_example_color">
+                <p>'1-2-2-0-更改指令8：将该指令中的第2个盒子的编号加1'</p>
+                <p>'2-7-3-0-相乘：5号盒子中的数字*3号盒子中的数字，将结果放在5号盒子中。'</p>
+                <p>'3-2-8-6-判断：指令4中第2个盒子的编号比8号盒子中的数字大吗'</p>
+                <p>'4-1-5-0-将7号盒子中的数字放在4号盒子中'</p>
+                <p>'5-5-3-1-判断：指令4中第1个盒子的编号比2号盒子中的数字大吗'</p>
+                <p>'6-7-7-0-更改指令4：将该指令中的第2个盒子的编号加1'</p>
+                <p>'7-1-4-3-判断：指令8中第2个盒子的编号比7号盒子中的数字大吗'</p>
+                <p>'8-4-9-0-将4号盒子中的数字放在3号盒子中'</p>
+                <p>9-8-0-0-更改指令8：将该指令中的第1个盒子的编号加2'</p>
+                <p>'5'</p>
+            </div>
+        </div>
     </div>
 
     <div id="hw_6" class="tabcontent">
