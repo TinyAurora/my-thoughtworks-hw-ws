@@ -1,8 +1,30 @@
 'use strict'
 
+const INSTRUCTIONERROR = 100;
+
 // 输入检查
-function check_input_5() {
-    return true;
+function check_input_5(inputStrArray) {
+    for (var i = 0; i < inputStrArray.length; i++) {    // 输入为空
+        if (inputStrArray[i] === "") {                 
+            return ISNULL;
+        }
+    }
+    if (isNaN(inputStrArray[0]) || Number(inputStrArray[0]) === 0) {    // 问题编号检查
+        return ISNAN;
+    }
+    // 输入指令检查
+    for (var i = 1; i < inputStrArray.length; i++) {
+        if (inputStrArray[i].length < 10) {
+            return INSTRUCTIONERROR;
+        }
+        var tempArray = inputStrArray[i].split("-");
+        for (var j = 0; j < 4; j++) {
+            if (isNaN(tempArray[j]) || isNaN(tempArray[j][tempArray[j].length - 1])) {
+                return INSTRUCTIONERROR;
+            }
+        }
+    }
+    return ISOK;
 }
 
 // 读取输入
@@ -100,9 +122,8 @@ function execute_instruction(node, inputInfo) {
     return nextPos;
 }
 
-// 求解函数
-function get_answer() {
-    var inputStrArray = get_input();    // 获取输入字符串数组
+// 输出
+function output_answer(inputStrArray) {
     var inputInfo = get_input_info(inputStrArray);    // 表示整个流程执行过程中每个结点的实时信息
     var step = inputInfo[1].seq;
     while (step != 0) {
@@ -110,4 +131,15 @@ function get_answer() {
         console.log("ggggg");
     }
     document.getElementById("answer").innerHTML = inputInfo[Number(inputInfo[0])].value;
+}
+
+// 求解函数
+function get_answer() {
+    var inputStrArray = get_input();    // 获取输入字符串数组
+    switch (check_input_5(inputStrArray)) {
+        case ISNAN: alert("错误：问题编号输入必须为1-9！"); break;
+        case ISNULL: alert("错误：输入不能为空！"); break;
+        case INSTRUCTIONERROR: alert("错误：输入指令格式错误！"); break;
+        case ISOK: output_answer(inputStrArray); break;
+    }
 }
