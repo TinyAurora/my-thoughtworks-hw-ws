@@ -28,7 +28,7 @@ function check_input_1(num1, num2) {
         return ISSPACE;
     } else if (Number(num2) === 0) {    // 除数为0
         return ISZERO;
-    } else if (ISILLEGALNUM) {          // 输入为非法数字
+    } else if (Number(num1[0]) === 0 || Number(num2[0]) === 0) {          // 输入为非法数字
         return ISILLEGALNUM;
     } else {                            // 输入正确
         return ISOK;

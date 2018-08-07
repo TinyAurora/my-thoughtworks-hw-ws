@@ -1,34 +1,47 @@
+// 输入检查
 function check_input_2(inputStr) {
-    var inputArray = inputStr.split(',');
-    var count = 0;
-    for (var i = 0; i < inputArray.length; i++) {
-        if ((!isNaN(inputArray[i]) || inputArray[i] === ',') && inputArray[i] !== ' ') {
-            count++;
-        }
-    }
-    alert('hh' + count + 'chang' + inputArray.length);
-
-    if (count === inputArray.length) {
-        return true;
+    var inputArray = inputStr.split(",");
+    var inputStr = inputStr.replace(",", "");
+    if (inputStr === '') {                        // 输入为空
+        return ISNULL;
+    } else if (inputStr.indexOf(" ") !== -1) {    // 输入含有空格
+        return ISSPACE;
     } else {
-        return false;
-    }  
+        for (var i = 0; i < inputArray.length; i++) {
+            if (isNaN(inputArray[i])) {
+                return ISNAN;                     // 输入含有非法字符
+            }
+            if (Number(inputArray[i][0]) === 0) {       // 输入为非法数字
+                return ISILLEGALNUM;
+            }
+        }
+        return ISOK;                              // 输入合法
+    } 
 }
 
+// 输出
+function output(inputStr) {
+    var inputArray = inputStr.split(",").map(function char2num(c) { return Number(c); });
+    var sequence = new Sequence(inputArray);
+    document.getElementById("min").innerHTML = " o) 最小值 = " + sequence.minimum();
+    document.getElementById("max").innerHTML = " o) 最大值 = " + sequence.maximun();
+    document.getElementById("nums").innerHTML = " o) 元素数量 = " + sequence.get_length();
+    document.getElementById("average").innerHTML = " o) 平均值 = " + sequence.average();
+}
+
+// 得到结果
 function get_result() {
     var inputStr = document.getElementById("inputStr").value;
-    if (check_input_2(inputStr)) {
-        var inputArray = inputStr.split(",").map(function char2num(c) { return Number(c); });
-        var sequence = new Sequence(inputArray);
-        document.getElementById("min").innerHTML = " o) 最小值 = " + sequence.minimum();
-        document.getElementById("max").innerHTML = " o) 最大值 = " + sequence.maximun();
-        document.getElementById("nums").innerHTML = " o) 元素数量 = " + sequence.get_length();
-        document.getElementById("average").innerHTML = " o) 平均值 = " + sequence.average();
-    } else {
-        document.getElementById("min").innerHTML = "输入数据格式错误，请重新输入！";
+    switch (check_input_2(inputStr)) {
+        case ISNAN: alert("错误：输入含有非法字符！"); break;
+        case ISNULL: alert("错误：输入不能为空！"); break;
+        case ISSPACE: alert("错误：输入不能含有空格符！"); break;
+        case ISILLEGALNUM: alert("错误：输入为非法数字，eg：'0000001', '03', '0004'！"); break;
+        case ISOK: output(inputStr); break;
     }
 }
 
+// 序列类
 class Sequence {
     constructor(input) {
         if (input instanceof Array) {
