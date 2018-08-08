@@ -11,15 +11,25 @@ function check_input_4(inputStr) {
     }
 }
 
+// 清除输出lcd
+function clear_lcd() {
+    document.getElementById("line_1").innerHTML = "请重新输入！";
+    document.getElementById("line_2").innerHTML = "";
+    document.getElementById("line_3").innerHTML = "";
+}
 
 // 得到结果
 function get_lcd_of_num() {
     var inputStr = document.getElementById("inputNum").value;
-    switch (check_input_4(inputStr)) {
-        case ISNAN: alert("错误：输入含有非法字符！"); break;
-        case ISNULL: alert("错误：输入不能为空！"); break;
-        case ISSPACE: alert("错误：输入不能含有空格符！"); break;
-        case ISOK: output_lcd(inputStr); break;
+    if (check_input_4(inputStr) === ISOK) {
+        output_lcd(inputStr);
+    } else {
+        clear_lcd();
+        switch (check_input_4(inputStr)) {
+            case ISNAN: alert("错误：输入含有非法字符！"); break;
+            case ISNULL: alert("错误：输入不能为空！"); break;
+            case ISSPACE: alert("错误：输入不能含有空格符！"); break;
+        }
     }
 }
 

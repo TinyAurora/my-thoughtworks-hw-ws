@@ -1,3 +1,4 @@
+// 输入检查
 function check_input_3(inputNumStr) {
     if (inputNumStr === "") {                                // 输入为空
         return ISNULL;
@@ -10,6 +11,7 @@ function check_input_3(inputNumStr) {
     }
 }
 
+// 输出
 function output_sum(inputNumStr) {
     var sum = 0;
     for (var i = 0; i < inputNumStr.length; i++) {
@@ -18,6 +20,7 @@ function output_sum(inputNumStr) {
     document.getElementById("sum").innerHTML = String(sum);
 }
 
+// 求解
 function get_sum_of_str() {
     var inputNumStr = document.getElementById("inputNumStr").value;
     if (check_input_3(inputNumStr) === ISOK) {

@@ -5,6 +5,7 @@ const ISSPACE = 2;       // 输入含有空格符，eg：'123 345 5 67'
 const ISZERO = 3;        // 第二个数不能为0，eg：2 % 0，除数不能为0
 const ISILLEGALNUM = 4;  // 输入为非法数字，eg：'0000001', '03', '0004'
 const ISOK = 5;          // 输入合法（允许负数、小数情况存在）
+
 // 求余
 function get_remainder() {
     var num1 = document.getElementById("num1").value;
@@ -22,6 +23,7 @@ function get_remainder() {
         }
     }
 }
+
 // 输入检查
 function check_input_1(num1, num2) {
     if (num1 === '' || num2 === '') {    // 输入为空

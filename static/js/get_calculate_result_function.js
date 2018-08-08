@@ -29,6 +29,7 @@ function output(inputStr) {
     document.getElementById("average").innerHTML = " o) 平均值 = " + sequence.average();
 }
 
+// 清楚输出
 function clear_output() {
     document.getElementById("min").innerHTML = "请重新输入！";
     document.getElementById("max").innerHTML = "";
