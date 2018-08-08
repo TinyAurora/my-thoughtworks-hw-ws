@@ -17,8 +17,8 @@ my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp
 │&emsp;│&emsp;├─ get_remainder_function.js&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; // JavaScript简单编程题-1，实现求余函数  
 │&emsp;│&emsp;├─ get_sum_of_str_function.js&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; // JavaScript中级编程题-1，实现字符串求和函数    
 │&emsp;│&emsp;├─ index_js.js&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; // 实现网页选项卡切换显示函数   
-│&emsp;│&emsp;└─ input_exception_function.js&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; // 实现输入异常类型检测函数    
-│&emsp;└─ video&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; // 存放多种数据格式视频    
+│&emsp;│&emsp;└─ input_exception_function.js&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; // 实现输入异常类型检测函数    
+│&emsp;└─ video&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; // 存放多种数据格式视频    
 │&emsp;&emsp;&nbsp;&nbsp;├─ logic_example.mp4    
 │&emsp;&emsp;&nbsp;&nbsp;├─ logic_example.ogg  
 │&emsp;&emsp;&nbsp;&nbsp;├─ logic_example.swf  
