@@ -1,10 +1,13 @@
 // 定义错误类型
-const ISNULL = 0;        // 没有输入，eg：''
-const ISNAN = 1;         // 输入不是数字，eg：'十度非ddsdqq.,./;'
-const ISSPACE = 2;       // 输入含有空格符，eg：'123 345 5 67'
-const ISZERO = 3;        // 第二个数不能为0，eg：2 % 0，除数不能为0
-const ISILLEGALNUM = 4;  // 输入为非法数字，eg：'0000001', '03', '0004'
-const ISOK = 5;          // 输入合法（允许负数、小数情况存在）
+const ISNULL = 0;               // 输入为空，eg：''
+const ISNAN = 1;                // 输入含有非法字符，eg：'十度非ddsdqq.,./;'
+const ISSPACE = 2;              // 输入含有空格符，eg：'123 345 5 67'
+const ISZERO = 3;               // 第二个数不能为0，eg：2 % 0，除数不能为0
+const ISILLEGALNUM = 4;         // 输入为非法数字，eg：'0000001', '03', '0004'
+const ISMINUS = 5;              // 输入不能为负数，eg：'-12435'
+const ISFLOAT = 6;              // 输入不能为小数，eg：'1.24345'
+const INSTRUCTIONERROR = 7;     // 指令格式错误
+const ISOK = 7;                 // 输入合法
 
 // 求余
 function get_remainder() {

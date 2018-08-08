@@ -6,6 +6,10 @@ function check_input_4(inputStr) {
         return ISNAN;
     } else if (Number(inputStr.indexOf(" ")) !== -1) {    // 输入含有空格
         return ISSPACE;
+    } else if (Number(inputStr.indexOf("-")) !== -1) {    // 输入不能为负数
+        return ISMINUS;
+    } else if (Number(inputStr.indexOf(".")) !== -1) {    // 输入不能为小数
+        return ISFLOAT;
     } else {                                                 // 输入合法
         return ISOK;
     }
@@ -29,6 +33,8 @@ function get_lcd_of_num() {
             case ISNAN: alert("错误：输入含有非法字符！"); break;
             case ISNULL: alert("错误：输入不能为空！"); break;
             case ISSPACE: alert("错误：输入不能含有空格符！"); break;
+            case ISMINUS: alert("错误：输入不能为负数！"); break;
+            case ISFLOAT: alert("错误：输入不能为小数！"); break;
         }
     }
 }

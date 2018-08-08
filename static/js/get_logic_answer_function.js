@@ -1,7 +1,5 @@
 'use strict'
 
-const INSTRUCTIONERROR = 100;
-
 // 输入检查
 function check_input_5(inputStrArray) {
     for (var i = 0; i < inputStrArray.length; i++) {    // 输入为空
