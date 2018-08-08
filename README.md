@@ -12,7 +12,7 @@ my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp
 │&emsp;│&emsp;└─ index_css.css&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; // 网页css样式  
 │&emsp;├─ js  
 │&emsp;│&emsp;├─ get_calculate_result_function.js&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp; // JavaScript简单编程题-2，实现求相关值函数  
-│&emsp;│&emsp;├─ get_lcd_of_num_function.js&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; // JavaScript中级编程题-2，实现数字转化为LCD符号函数  
+│&emsp;│&emsp;├─ get_lcd_of_num_function.js&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; // JavaScript中级编程题-2，实现数字转化为LCD符号函数  
 │&emsp;│&emsp;├─ get_logic_answer_function.js&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; // 第二组逻辑题，实现求解逻辑题答案函数  
 │&emsp;│&emsp;├─ get_remainder_function.js&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&nbsp; // JavaScript简单编程题-1，实现求余函数  
 │&emsp;│&emsp;├─ get_sum_of_str_function.js&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; // JavaScript中级编程题-1，实现字符串求和函数    
