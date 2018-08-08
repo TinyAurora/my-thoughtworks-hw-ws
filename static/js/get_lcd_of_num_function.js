@@ -1,20 +1,3 @@
-// 输入检查
-function check_input_4(inputStr) {
-    if (inputStr === "") {                                // 输入为空
-        return ISNULL;
-    } else if (isNaN(inputStr) || isNaN(inputStr[inputStr.length - 1])) {   // 输入含有非法字符
-        return ISNAN;
-    } else if (Number(inputStr.indexOf(" ")) !== -1) {    // 输入含有空格
-        return ISSPACE;
-    } else if (Number(inputStr.indexOf("-")) !== -1) {    // 输入不能为负数
-        return ISMINUS;
-    } else if (Number(inputStr.indexOf(".")) !== -1) {    // 输入不能为小数
-        return ISFLOAT;
-    } else {                                                 // 输入合法
-        return ISOK;
-    }
-}
-
 // 清除输出lcd
 function clear_lcd() {
     document.getElementById("line_1").innerHTML = "请重新输入！";
@@ -25,11 +8,11 @@ function clear_lcd() {
 // 得到结果
 function get_lcd_of_num() {
     var inputStr = document.getElementById("inputNum").value;
-    if (check_input_4(inputStr) === ISOK) {
+    if (check_input(GET_NUM_LCD, inputStr) === ISOK) {
         output_lcd(inputStr);
     } else {
         clear_lcd();
-        switch (check_input_4(inputStr)) {
+        switch (check_input(GET_NUM_LCD, inputStr)) {
             case ISNAN: alert("错误：输入含有非法字符！"); break;
             case ISNULL: alert("错误：输入不能为空！"); break;
             case ISSPACE: alert("错误：输入不能含有空格符！"); break;
