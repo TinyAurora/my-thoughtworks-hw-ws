@@ -59,7 +59,7 @@ function check_input_2(inputStr) {
             if (isNaN(inputArray[i]) || isNaN(inputArray[i][inputArray[i].length - 1])) {
                 return ISNAN;                     // 输入含有非法字符
             }
-            if (Number(inputArray[i][0]) === 0) {       // 输入为非法数字
+            if (Number(inputArray[i][0]) === 0) { // 输入为非法数字
                 return ISILLEGALNUM;
             }
         }
@@ -96,7 +96,7 @@ function check_input_4(inputStr) {
         return ISMINUS;
     } else if (Number(inputStr.indexOf(".")) !== -1) {    // 输入不能为小数
         return ISFLOAT;
-    } else {                                                 // 输入合法
+    } else {                                              // 输入合法
         return ISOK;
     }
 }
@@ -111,8 +111,7 @@ function check_input_5(inputStrArray) {
     if (isNaN(inputStrArray[0]) || Number(inputStrArray[0]) === 0) {    // 问题编号检查
         return ISNAN;
     }
-    // 输入指令检查
-    for (var i = 1; i < inputStrArray.length; i++) {
+    for (var i = 1; i < inputStrArray.length; i++) {    // 输入指令检查
         if (inputStrArray[i].length < 10) {
             return INSTRUCTIONERROR;
         }
