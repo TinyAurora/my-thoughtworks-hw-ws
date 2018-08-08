@@ -3,7 +3,7 @@
 ## 项目介绍  
 通过ngrok外网映射，将本地http服务器里的静态网页资源文件暴露在外网，供其他人访问。  
 
-## 项目目录结构  
+## 目录结构  
 my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; // 工作空间目录    
 ├─ README.md&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; // 说明文档    
 ├─ static&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; // 静态网页资源文件夹   
@@ -25,4 +25,27 @@ my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp
 │&emsp;&emsp;&nbsp;&nbsp;└─ logic_example.webm  
 └─ file_server.js&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; // 实现http文件服务器，读取上述静态网页资源   
 
+## 使用教程
 
+## 视频教程
+
+## 问题记录
+- js原型链问题--（constructor，prototype，proto）
+- html,css,js执行顺序问题--（语句、变量顺序、作用域等）
+- nodejs控制台输入readline问题--（单行、多行、非阻塞、异步、单线程）
+- js回调函数问题
+- isNaN问题--（空字符以及'1.', '1,'等）
+- .vscode问题
+- DOM操作问题--（嵌套类名等）
+- 正则问题
+- js数据结构问题--（链表、二叉树等）
+- js内存问题--（实现过程中没出现过内存异常等问题？？）
+- 网页布局问题--（手机上看或者调整pc上网页窗口大小会导致网页内容布局变乱）
+- js http服务器工作模式（并发？性能？等）
+- ngrok外网映射问题
+- js html 传参问题
+- js 不同文件函数调用问题 
+
+## 参考资料
+- https://c.runoob.com/codedemo/3163 
+- https://github.com/michaelliao/learn-javascript/tree/master/samples/node/http

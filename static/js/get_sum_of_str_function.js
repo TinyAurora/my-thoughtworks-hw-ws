@@ -1,4 +1,4 @@
-/* ThoughtWorks训练营作业之JavaScript简单编程题-3 */
+/* ThoughtWorks训练营作业之Javascript中级编程题-1 */
 
 'use strict'
 
