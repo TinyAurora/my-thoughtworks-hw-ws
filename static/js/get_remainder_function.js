@@ -9,13 +9,17 @@ const ISOK = 5;          // 输入合法（允许负数、小数情况存在）
 function get_remainder() {
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
-    switch (check_input_1(num1, num2)) {
-        case ISNULL: alert("错误：输入不能为空！"); break;
-        case ISNAN: alert("错误：输入不能为其它字符类型！"); break;
-        case ISSPACE: alert("错误：输入不能含有空格符！"); break;
-        case ISZERO: alert("错误：第二个数不能为0！"); break;
-        case ISILLEGALNUM: alert("错误：输入为非法数字，eg：'0000001', '03', '0004'！"); break;
-        case ISOK: document.getElementById("result").innerHTML = (num1 % num2).toString(); break;
+    if (check_input_1(num1, num2) === ISOK) {
+        document.getElementById("result").innerHTML = (num1 % num2).toString();
+    } else {
+        document.getElementById("result").innerHTML = "请重新输入！";
+        switch (check_input_1(num1, num2)) {
+            case ISNULL: alert("错误：输入不能为空！"); break;
+            case ISNAN: alert("错误：输入不能为其它字符类型！"); break;
+            case ISSPACE: alert("错误：输入不能含有空格符！"); break;
+            case ISZERO: alert("错误：第二个数不能为0！"); break;
+            case ISILLEGALNUM: alert("错误：输入为非法数字，eg：'0000001', '03', '0004'！"); break;
+        }
     }
 }
 // 输入检查
