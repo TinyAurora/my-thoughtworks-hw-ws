@@ -27,8 +27,6 @@ my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp
 
 ## 使用教程
 
-## 视频教程
-
 ## 问题记录
 - js原型链问题--（constructor，prototype，proto）
 - html,css,js执行顺序问题--（语句、变量顺序、作用域等）
