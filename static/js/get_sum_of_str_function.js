@@ -20,10 +20,14 @@ function output_sum(inputNumStr) {
 
 function get_sum_of_str() {
     var inputNumStr = document.getElementById("inputNumStr").value;
-    switch (check_input_3(inputNumStr)) {
-        case ISNAN: alert("错误：输入含有非法字符！"); break;
-        case ISNULL: alert("错误：输入不能为空！"); break;
-        case ISSPACE: alert("错误：输入不能含有空格符！"); break;
-        case ISOK: output_sum(inputNumStr); break;
+    if (check_input_3(inputNumStr) === ISOK) {
+        output_sum(inputNumStr);
+    } else {
+        document.getElementById("sum").innerHTML = "请重新输入！";
+        switch (check_input_3(inputNumStr)) {
+            case ISNAN: alert("错误：输入含有非法字符！"); break;
+            case ISNULL: alert("错误：输入不能为空！"); break;
+            case ISSPACE: alert("错误：输入不能含有空格符！"); break;
+        }
     }
 }
