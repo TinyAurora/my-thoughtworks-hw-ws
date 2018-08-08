@@ -1,4 +1,21 @@
+/* ThoughtWorks训练营作业之第二组逻辑题 */
+
 'use strict'
+
+// 求解函数
+function get_answer() {
+    var inputStrArray = get_input();    // 获取输入字符串数组
+    if (check_input(GET_LOGIC_ANSWER, inputStrArray) === ISOK) {
+        output_answer(inputStrArray);
+    } else {
+        document.getElementById("answer").innerHTML = "请重新输入！";
+        switch (check_input(GET_LOGIC_ANSWER, inputStrArray)) {
+            case ISNAN: alert("错误：问题编号输入必须为1-9！"); break;
+            case ISNULL: alert("错误：输入不能为空！"); break;
+            case INSTRUCTIONERROR: alert("错误：输入指令格式错误！"); break;
+        }
+    }
+}
 
 // 读取输入
 function get_input() {
@@ -104,19 +121,4 @@ function output_answer(inputStrArray) {
         console.log("ggggg");
     }
     document.getElementById("answer").innerHTML = inputInfo[Number(inputInfo[0])].value;
-}
-
-// 求解函数
-function get_answer() {
-    var inputStrArray = get_input();    // 获取输入字符串数组
-    if (check_input(GET_LOGIC_ANSWER, inputStrArray) === ISOK) {
-        output_answer(inputStrArray);
-    } else {
-        document.getElementById("answer").innerHTML = "请重新输入！";
-        switch (check_input(GET_LOGIC_ANSWER, inputStrArray)) {
-            case ISNAN: alert("错误：问题编号输入必须为1-9！"); break;
-            case ISNULL: alert("错误：输入不能为空！"); break;
-            case INSTRUCTIONERROR: alert("错误：输入指令格式错误！"); break;
-        }
-    }
 }

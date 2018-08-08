@@ -1,9 +1,6 @@
-// 清除输出lcd
-function clear_lcd() {
-    document.getElementById("line_1").innerHTML = "请重新输入！";
-    document.getElementById("line_2").innerHTML = "";
-    document.getElementById("line_3").innerHTML = "";
-}
+/* ThoughtWorks训练营作业之JavaScript简单编程题-4 */
+
+'use strict'
 
 // 得到结果
 function get_lcd_of_num() {
@@ -20,6 +17,13 @@ function get_lcd_of_num() {
             case ISFLOAT: alert("错误：输入不能为小数！"); break;
         }
     }
+}
+
+// 清除输出lcd
+function clear_lcd() {
+    document.getElementById("line_1").innerHTML = "请重新输入！";
+    document.getElementById("line_2").innerHTML = "";
+    document.getElementById("line_3").innerHTML = "";
 }
 
 // 输出

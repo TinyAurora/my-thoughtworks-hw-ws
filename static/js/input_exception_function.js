@@ -1,3 +1,5 @@
+'use strict'
+
 // 定义错误类型
 const ISNULL = 0;               // 输入为空，eg：''
 const ISNAN = 1;                // 输入含有非法字符，eg：'十度非ddsdqq.,./;'

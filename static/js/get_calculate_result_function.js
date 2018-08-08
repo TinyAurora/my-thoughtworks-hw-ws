@@ -1,3 +1,23 @@
+/* ThoughtWorks训练营作业之JavaScript简单编程题-2 */
+
+'use strict'
+
+// 得到结果
+function get_result() {
+    var inputStr = document.getElementById("inputStr").value;
+    if (check_input(GET_CALCULATE, inputStr) === ISOK) {
+        output(inputStr);
+    } else {
+        clear_output();
+        switch (check_input(GET_CALCULATE, inputStr)) {
+            case ISNAN: alert("错误：输入含有非法字符！"); break;
+            case ISNULL: alert("错误：输入不能为空！"); break;
+            case ISSPACE: alert("错误：输入不能含有空格符！"); break;
+            case ISILLEGALNUM: alert("错误：输入为非法数字，eg：'0000001', '03', '0004'！"); break;
+        }
+    }
+}
+
 // 输出
 function output(inputStr) {
     var inputArray = inputStr.split(",").map(function char2num(c) { return Number(c); });
@@ -14,22 +34,6 @@ function clear_output() {
     document.getElementById("max").innerHTML = "";
     document.getElementById("nums").innerHTML = "";
     document.getElementById("average").innerHTML = "";
-}
-
-// 得到结果
-function get_result() {
-    var inputStr = document.getElementById("inputStr").value;
-    if (check_input(GET_CALCULATE, inputStr) === ISOK) {
-        output(inputStr);
-    } else {
-        clear_output();
-        switch (check_input(GET_CALCULATE, inputStr)) {
-            case ISNAN: alert("错误：输入含有非法字符！"); break;
-            case ISNULL: alert("错误：输入不能为空！"); break;
-            case ISSPACE: alert("错误：输入不能含有空格符！"); break;
-            case ISILLEGALNUM: alert("错误：输入为非法数字，eg：'0000001', '03', '0004'！"); break;
-        }
-    }
 }
 
 // 序列类

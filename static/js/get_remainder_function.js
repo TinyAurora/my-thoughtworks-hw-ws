@@ -1,3 +1,7 @@
+/* ThoughtWorks训练营作业之JavaScript简单编程题-1 */
+
+'use strict'
+
 // 求余
 function get_remainder() {
     var num1 = document.getElementById("num1").value;

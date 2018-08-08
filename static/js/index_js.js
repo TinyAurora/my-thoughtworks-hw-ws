@@ -1,3 +1,5 @@
+'use strict'
+
 function select_hw(evt, hw_num) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

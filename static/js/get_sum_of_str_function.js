@@ -1,11 +1,6 @@
-// 输出
-function output_sum(inputNumStr) {
-    var sum = 0;
-    for (var i = 0; i < inputNumStr.length; i++) {
-        sum += Number(inputNumStr[i]);
-    }
-    document.getElementById("sum").innerHTML = String(sum);
-}
+/* ThoughtWorks训练营作业之JavaScript简单编程题-3 */
+
+'use strict'
 
 // 求解
 function get_sum_of_str() {
@@ -23,3 +18,13 @@ function get_sum_of_str() {
         }
     }
 }
+
+// 输出
+function output_sum(inputNumStr) {
+    var sum = 0;
+    for (var i = 0; i < inputNumStr.length; i++) {
+        sum += Number(inputNumStr[i]);
+    }
+    document.getElementById("sum").innerHTML = String(sum);
+}
+
