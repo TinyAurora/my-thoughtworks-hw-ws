@@ -136,10 +136,14 @@ function output_answer(inputStrArray) {
 // 求解函数
 function get_answer() {
     var inputStrArray = get_input();    // 获取输入字符串数组
-    switch (check_input_5(inputStrArray)) {
-        case ISNAN: alert("错误：问题编号输入必须为1-9！"); break;
-        case ISNULL: alert("错误：输入不能为空！"); break;
-        case INSTRUCTIONERROR: alert("错误：输入指令格式错误！"); break;
-        case ISOK: output_answer(inputStrArray); break;
+    if (check_input_5(inputStrArray) === ISOK) {
+        output_answer(inputStrArray);
+    } else {
+        document.getElementById("answer").innerHTML = "请重新输入！";
+        switch (check_input_5(inputStrArray)) {
+            case ISNAN: alert("错误：问题编号输入必须为1-9！"); break;
+            case ISNULL: alert("错误：输入不能为空！"); break;
+            case INSTRUCTIONERROR: alert("错误：输入指令格式错误！"); break;
+        }
     }
 }
