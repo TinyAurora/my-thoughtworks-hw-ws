@@ -1,7 +1,8 @@
 # my-thoughtworks-hw-ws  
 
 ## 项目介绍  
-通过ngrok外网映射，将本地http服务器里的静态网页资源文件暴露在外网，供其他人访问。（注：外网访问，视频文件可能加载不了，本地访问则可）  
+通过ngrok外网映射，将本地http服务器里的静态网页资源文件暴露在外网，供其他人访问。
+（注：外网访问，视频文件可能加载不了，本地访问则可）     
 
 ## 目录结构  
 my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; // 工作空间目录    
@@ -24,6 +25,8 @@ my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp
 │&emsp;&emsp;&nbsp;&nbsp;├─ logic_example.swf  
 │&emsp;&emsp;&nbsp;&nbsp;└─ logic_example.webm  
 └─ file_server.js&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; // 实现http文件服务器，读取上述静态网页资源   
+└─ ngrok.exe&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp; // ngrok外网映射程序
+└─ example_play.mp4emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; // 示例视频
 
 ## 使用教程
 
