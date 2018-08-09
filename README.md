@@ -1,8 +1,7 @@
 # my-thoughtworks-hw-ws  
 
 ## 项目介绍  
-通过ngrok外网映射，将本地http服务器里的静态网页资源文件暴露在外网，供其他人访问。    
-（注：外网访问，视频文件可能加载不了，本地访问则可）     
+通过ngrok外网映射，将本地http服务器里的静态网页资源文件暴露在外网，供其他人访问。         
 
 ## 目录结构  
 my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; // 工作空间目录    
