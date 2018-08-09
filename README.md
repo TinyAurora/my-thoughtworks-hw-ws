@@ -40,7 +40,7 @@ my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp
     - 启动Git Bash，找到file_server.js文件并执行，如下：   
     <img width="700" height="400" src="https://images2018.cnblogs.com/blog/1334974/201808/1334974-20180809172149724-1661994454.png"/>  
        
-    - 打开Microsoft Edge或Google Chrome浏览器，输入相应的内网、外网访问地址：，即可访问到静态网页资源，如下:    
+    - 打开Microsoft Edge或Google Chrome浏览器，输入相应的内网、外网访问地址，如下:    
     <img width="700" height="400" src="https://images2018.cnblogs.com/blog/1334974/201808/1334974-20180809165259032-1215230917.png"/>    
     <img width="700" height="400" src="https://images2018.cnblogs.com/blog/1334974/201808/1334974-20180809165615872-391646534.png"/>    
 - 注意事件：
