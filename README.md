@@ -35,9 +35,9 @@ my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp
     - node.js版本：node-v8.11.3
 - 使用步骤
     - 点击运行ngrok.exe并在命令行里输入ngrok.exe http 8080，按回车执行，如下：   
-    <img width="700" height="400" src="https://images2018.cnblogs.com/blog/1334974/201808/1334974-20180809164424038-314069629.jpg"/>       
+    <img width="700" height="400" src="https://images2018.cnblogs.com/blog/1334974/201808/1334974-20180809164424038-314069629.jpg"/>&emsp;&emsp;       
     - 启动Git Bash，找到file_server.js文件并执行，如下：       
-    <img width="700" height="400" src="https://images2018.cnblogs.com/blog/1334974/201808/1334974-20180809164938062-970273243.png"/>      
+    <img width="700" height="400" src="https://images2018.cnblogs.com/blog/1334974/201808/1334974-20180809164938062-970273243.png"/>&emsp;&emsp;      
     - 打开Microsoft Edge或Google Chrome浏览器，输入相应的内网、外网访问地址：，即可访问到静态网页资源，如下:    
     <img width="700" height="400" src="https://images2018.cnblogs.com/blog/1334974/201808/1334974-20180809165259032-1215230917.png"/>   
     <img width="700" height="400" src="https://images2018.cnblogs.com/blog/1334974/201808/1334974-20180809165615872-391646534.png"/>     
