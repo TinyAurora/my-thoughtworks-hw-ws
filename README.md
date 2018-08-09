@@ -1,7 +1,7 @@
 # my-thoughtworks-hw-ws  
 
 ## 项目介绍  
-将ThoughtWorks训练营作业整理集中到静态网页文件里，并通过ngrok外网映射，将本地http服务器里的静态网页资源文件暴露在外网，供其他人访问。         
+- 将ThoughtWorks训练营作业整理集中到静态网页文件里，并通过ngrok外网映射，将本地http服务器里的静态网页资源文件暴露在外网，供其他人访问。         
 
 ## 目录结构  
 my-thoughtworks-hw-ws&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; // 工作空间目录    
