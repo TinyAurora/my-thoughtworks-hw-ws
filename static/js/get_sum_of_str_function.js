@@ -9,13 +9,7 @@ function get_sum_of_str() {
         output_sum(inputNumStr);
     } else {
         document.getElementById("sum").innerHTML = "请重新输入！";
-        switch (check_input(GET_STR_SUM, inputNumStr)) {
-            case ISNAN: alert("错误：输入含有非法字符！"); break;
-            case ISNULL: alert("错误：输入不能为空！"); break;
-            case ISSPACE: alert("错误：输入不能含有空格符！"); break;
-            case ISMINUS: alert("错误：输入不能为负数！"); break;
-            case ISFLOAT: alert("错误：输入不能为小数！"); break;
-        }
+        print_error(check_input(GET_STR_SUM, inputNumStr));
     }
 }
 

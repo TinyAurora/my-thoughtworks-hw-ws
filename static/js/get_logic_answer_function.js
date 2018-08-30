@@ -9,11 +9,7 @@ function get_answer() {
         output_answer(inputStrArray);
     } else {
         document.getElementById("answer").innerHTML = "请重新输入！";
-        switch (check_input(GET_LOGIC_ANSWER, inputStrArray)) {
-            case ISNAN: alert("错误：问题编号输入必须为1-9！"); break;
-            case ISNULL: alert("错误：输入不能为空！"); break;
-            case INSTRUCTIONERROR: alert("错误：输入指令格式错误！"); break;
-        }
+        print_error(check_input(GET_LOGIC_ANSWER, inputStrArray));
     }
 }
 

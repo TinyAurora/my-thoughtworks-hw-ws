@@ -1,6 +1,6 @@
 'use strict'
 
-// 定义错误类型
+// 定义错误号
 const ISNULL = 0;               // 输入为空，eg：''
 const ISNAN = 1;                // 输入含有非法字符，eg：'十度非ddsdqq.,./;'
 const ISSPACE = 2;              // 输入含有空格符，eg：'123 345 5 67'
@@ -123,4 +123,18 @@ function check_input_5(inputStrArray) {
         }
     }
     return ISOK;
+}
+
+// 打印错误号对应错误信息
+function print_error(errno) {
+    switch (errno) {
+        case ISNULL: alert("错误：输入不能为空！"); break;
+        case ISNAN: alert("错误：输入含有非法字符！"); break;
+        case ISSPACE: alert("错误：输入不能含有空格符！"); break;
+        case ISZERO: alert("错误：第二个数不能为0！"); break;
+        case ISILLEGALNUM: alert("错误：输入为非法数字，eg：'0000001', '03', '0004'！"); break;
+        case ISMINUS: alert("错误：输入不能为负数！"); break;
+        case ISFLOAT: alert("错误：输入不能为小数！"); break;
+        case INSTRUCTIONERROR: alert("错误：输入指令格式错误！"); break;
+    }
 }
